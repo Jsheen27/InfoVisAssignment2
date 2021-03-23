@@ -7,6 +7,10 @@ df.drop_duplicates(subset="track_id", keep = 'first', inplace = True)
 
 df.to_csv('spotify_data.csv')
 
-df = df[df.playlist_genre == "pop"]
+df1 = df[df.playlist_genre == "pop"]
 
-df.to_csv('spotify_data_pop.csv')
+df1.to_csv('spotify_data_pop.csv')
+
+df2 = df[df.playlist_genre == "edm"]
+
+df2.to_csv('spotify_data_edm.csv')
